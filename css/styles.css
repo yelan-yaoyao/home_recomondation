@@ -2,10 +2,116 @@
     margin: 0;
     padding: 0;
 }
+.navbar{
+    background-color:rgb(44, 44, 44);
+    height: 5rem;
+}
+.logo{
+    height: 4rem;
+    width: 20rem;
+    position: relative;
+    left: 0.09rem;
+    bottom: 1.5rem;
+}
 .navlist{
     list-style: none;
-    display: flex;
-}
-.navlist a{
     text-decoration: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color:white;
+    position: relative;
+    left: 25rem;
+    top: 1rem;
+}
+.text-home{
+    position: relative;
+    left: 1rem;
+}
+.flats{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color:white;
+    position: relative;
+    left: 20rem;
+    top: 1rem;
+}
+.text-flats{
+    position: relative;
+    left: 1rem;
+}
+.houses{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color:white;
+    position: relative;
+    left: 15rem;
+    top: 1rem;
+}
+.text-houses{
+    position: relative;
+    left: 1rem;
+}
+.about{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color:white;
+    position: relative;
+    right: 0.25rem;
+    left: 10rem;
+    top: 1rem;
+}
+.text-about{
+    position: relative;
+    left: 1rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 7rem;
+    background-color:white;
+    position: relative;
+    left: 5rem;
+    top: 1rem;
+}
+.text-contact{
+    position: relative;
+    left: 1rem;
+}
+.faq{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 7rem;
+    background-color:white;
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+}
+.text-faq{
+    position: relative;
+    left: 1rem;
+}
+.main{
+    height: 41rem;
+
+}
+.main-image{
+    position: absolute;
+    height: 41rem;
+    width: 100rem;
 }
