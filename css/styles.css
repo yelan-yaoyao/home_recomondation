@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.heading{
-    color: brown;
+.navlist{
+    list-style: none;
+    display: flex;
+}
+.navlist a{
+    text-decoration: none;
 }
