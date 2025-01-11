@@ -3,56 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Home recommondation</title>
+    
+    <title>Home_Recommendation</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <nav>
-            <ul class="navlist">
-                <li><a href="index.html">
-                        <div class="home"><i class="fa-solid fa-house" style="position: relative; left: 0.5rem;"></i>
-                            <h3 class="text-home">Home</h3>
-                        </div>
-                    </a></li>
-                <li><a href="pages/flat.html">
-                        <div class="flats"><i class="fa-solid fa-building-user"
-                                style="position: relative; left: 0.5rem;"></i>
-                            <h3 class="text-flats">Flats</h3>
-                        </div>
-                    </a></li>
-                <li><a href="pages/houses.html">
-                        <div class="houses"><i class="fa-solid fa-house-user"
-                                style="position: relative; left: 0.5rem;"></i>
-                            <h3 class="text-houses">Houses</h3>
-                        </div>
-                    </a></li>
-                <li><a href="pages/about.html">
-                        <div class="about"><i class="fa-solid fa-user" style="position: relative; left: 0.5rem;"></i>
-                            <h3 class="text-about">About</h3>
-                        </div>
-                    </a></li>
-                <li><a href="pages/contact.html">
-                        <div class="contact">
-                            <h3 class="text-contact">Contact us</h3>
-                        </div>
-                    </a></li>
-                <li><a href="pages/faq.html">
-                        <div class="faq"><i class="fa-solid fa-circle-question"
-                                style="position: relative; left: 0.5rem;"></i>
-                            <h3 class="text-faq">FAQs</h3>
-                        </div>
-                    </a></li>
-            </ul>
-        </nav>
-        <div class="logo"><img src="images/logo.png" alt="logo"
-                style="position: absolute; height: 4rem; width: 20rem;"></div>
-    </div>
-    <div class="main">
-        <img class="main-image" src="images/bgh.jpg" alt="bg">
-    </div>
+    <nav class="navbar background h-nav-resp">
+
+        <ul class="navbar-list v-class-resp">
+            <div class="logo"><img src="logo.jpg" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>         
+            <li><a href="pages/houses.html">Explore</a></li>
+            <li><a href="pages/contact.html">ContactUs</a></li>
+            <li><a href="pages/about.html">About</a></li>
+    
+        </ul>
+        <div class="rightnav v-class-resp">
+       
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">Pc building starts here</p>
+                <p class="text-small">Decide your budget or make a pc optimal for your budget.Get recomonded parts and
+                    machines as per your budget</p>
+                <div class="buttons">
+                    <button class="btn">Explore</button>
+                    <button class="btn">FAQ's</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+        <p class="sectiontag text-big">The end of searching is here</p>
+        <p class="sectionsubtag text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, numquam ipsa dicta
+            blanditiis aliquam magnam distinctio iste omnis, porro, optio deserunt. A aperiam veniam, sunt vero libero
+            ratione ad natus. Voluptatibus id soluta dolores molestiae rem delectus perspiciatis labore aperiam tempora
+            voluptas facilis enim culpa laboriosam odit voluptatem assumenda non nam vitae in! Quis voluptas vel ipsum
+            ut saepe dolorem vitae impedit est neque!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img1.jpg" alt="image" class="imgfluid">
+            </div>
+    </section>
+    <hr>
+    <section class="section left">
+        <div class="paras">
+        <p class="sectiontag text-big">The end of searching is here</p>
+        <p class="sectionsubtag text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, numquam ipsa dicta
+            blanditiis aliquam magnam distinctio iste omnis, porro, optio deserunt. A aperiam veniam, sunt vero libero
+            ratione ad natus. Voluptatibus id soluta dolores molestiae rem delectus perspiciatis labore aperiam tempora
+            voluptas facilis enim culpa laboriosam odit voluptatem assumenda non nam vitae in! Quis voluptas vel ipsum
+            ut saepe dolorem vitae impedit est neque!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img2.jpg" alt="image" class="imgfluid">
+            </div>
+    </section>
+    <hr>
+    <section class="section">
+        <div class="paras">
+        <p class="sectiontag text-big">The end of searching is here</p>
+        <p class="sectionsubtag text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, numquam ipsa dicta
+            blanditiis aliquam magnam distinctio iste omnis, porro, optio deserunt. A aperiam veniam, sunt vero libero
+            ratione ad natus. Voluptatibus id soluta dolores molestiae rem delectus perspiciatis labore aperiam tempora
+            voluptas facilis enim culpa laboriosam odit voluptatem assumenda non nam vitae in! Quis voluptas vel ipsum
+            ut saepe dolorem vitae impedit est neque!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img3.jpg" alt="image" class="imgfluid">
+            </div>
+    </section>
+    <hr>
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter your name...">
+            <input type="text" name="email" id="email" placeholder="Enter your email...">
+            <textarea class="describe" name="text" id="text" placeholder="Elobrate your concern..."></textarea>
+            <button class="btn btn-sm">Submit</button>
+            
+
+        </div>
+    </section>
+    <footer>
+        <p class="text-footer">
+        Copyright &copy; 2024 PCWare - all rights reserved
+        </p>
+    </footer>
+    
 </body>
 
 </html>

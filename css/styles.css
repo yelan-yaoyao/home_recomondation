@@ -1,117 +1,289 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-}
-.navbar{
-    background-color:rgb(44, 44, 44);
-    height: 5rem;
-}
-.logo{
-    height: 4rem;
-    width: 20rem;
-    position: relative;
-    left: 0.09rem;
-    bottom: 1.5rem;
-}
-.navlist{
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
 
 }
-.home{
+html{
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(200, 200, 200);
+    border-radius: 50px;
+}
+
+.navbar {
     display: flex;
     align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color:white;
-    position: relative;
-    left: 25rem;
-    top: 1rem;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
 }
-.text-home{
-    position: relative;
-    left: 1rem;
-}
-.flats{
+
+.navbar-list {
+    width: 70%;
+    
     display: flex;
     align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color:white;
-    position: relative;
-    left: 20rem;
-    top: 1rem;
+
 }
-.text-flats{
-    position: relative;
-    left: 1rem;
+
+.navbar-list li {
+    list-style: none;
+    padding: 26px 20px;
+
 }
-.houses{
+
+.navbar-list li a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+
+.navbar-list li a {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.navbar-list a:before, .navbar-list a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.navbar-list a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.navbar-list a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar-list a:hover:before, .navbar-list a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+.background{
+    background: rgba(0,0 ,0 , 0.7)url("..//images/bg6.jpg");
+    background-size: cover;
+    /* background-blend-mode: darken; */
+}
+.box-main{
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color:white;
-    position: relative;
-    left: 15rem;
-    top: 1rem;
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+    
 }
-.text-houses{
-    position: relative;
-    left: 1rem;
+.firstsection{
+    height: 100vh;
+
 }
-.about{
+.firsthalf{
+    width: 80%;
     display: flex;
-    align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color:white;
-    position: relative;
-    right: 0.25rem;
-    left: 10rem;
-    top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    
+
 }
-.text-about{
-    position: relative;
-    left: 1rem;
+.secondhalf{
+    width: 30%;
+}
+.text-big{
+    font-size: 50px;
+}
+.text-small{
+    font-size: 25px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 20px 0px;
+    margin-right: 15px;
+    border: 2px solid white;
+    font-size: 18px;
+    background: none;
+    color: #FFF;
+    cursor: pointer;
+}
+.btn-sm{
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 6px 10px;
+    background: none;
+    color: #FFF;
+    margin-bottom: 6px;
+    vertical-align: middle;
+}
+.section{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.paras{
+    padding: 0 80px;
+}
+.left{
+   flex-direction: row-reverse;
+}
+.thumbnail img{
+    width:400px;
+    border: 2px solid black;
+    margin-top: 19px;
 }
 .contact{
-    display: flex;
-    align-items: center;
-    height: 2rem;
-    width: 7rem;
-    background-color:white;
-    position: relative;
-    left: 5rem;
-    top: 1rem;
+    background-color: rgb(74, 73, 71);
+    height:533px;
 }
-.text-contact{
-    position: relative;
-    left: 1rem;
-}
-.faq{
-    display: flex;
-    align-items: center;
-    height: 2rem;
-    width: 7rem;
-    background-color:white;
-    position: relative;
-    right: 1rem;
-    top: 1rem;
-}
-.text-faq{
-    position: relative;
-    left: 1rem;
-}
-.main{
-    height: 41rem;
+.text-center{
+    text-align: center;
+    color: #FFF;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
 
 }
-.main-image{
+.form{
+    max-width: 62%;
+    margin: auto;
+    
+    
+}
+.form input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-top: 23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.describe{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-top: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+
+   
+}
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+
+}
+.burger{
+    display: none;
     position: absolute;
-    height: 41rem;
-    width: 100rem;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: #FFF;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1199px){
+    .navbar-list{
+        flex-direction: column;
+        padding-top: 100px;
+       
+    }
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all 0.3s ease-out;
+
+    }
+    
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
 }
