@@ -2,11 +2,11 @@
 
 
 document.getElementById('faqbtn').addEventListener('click', function (){
-    window.location.href = '..//pages/faq.html';
+    window.location.href = './pages/faq.html';
 });
 
 document.getElementById('expbtn').addEventListener('click', function (){
-    window.location.href = '..//pages/houses.html';
+    window.location.href = './pages/houses.html';
 });
 
 
