@@ -42,6 +42,7 @@
     background-color: white;
     overflow: hidden;
     background-color: #f1f7f5;
+    display: none;
 }
 .ans p {
     color: rgba(0, 0, 0, 0.7);
