@@ -104,19 +104,7 @@
         </p>
     </footer>
     <script src="./js/index.js"></script>
-    <button id="fetch-data">Get Server Data</button>
-  <p id="response"></p>
-
-  <script>
-    document.getElementById('fetch-data').addEventListener('click', () => {
-      fetch('https://your-app.onrender.com/api/data')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('response').innerText = data.message;
-        })
-        .catch(error => console.error('Error:', error));
-    });
-    </script>
+    
 </body>
 
 </html>

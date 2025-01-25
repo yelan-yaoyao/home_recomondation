@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "house1.jpg",
+        "description": "A beautiful 3-bedroom house.",
+        "price": 250000,
+        "state": "California",
+        "city": "Los Angeles"
+    },
+    {
+        "id": 2,
+        "image": "house2.jpg",
+        "description": "Modern apartment in the city center.",
+        "price": 300000,
+        "state": "New York",
+        "city": "New York"
+    },
+    {
+        "id": 3,
+        "image": "house3.jpg",
+        "description": "Spacious villa with a pool.",
+        "price": 500000,
+        "state": "Florida",
+        "city": "Miami"
+    }
+]
