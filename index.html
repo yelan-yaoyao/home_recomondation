@@ -44,7 +44,8 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    
+    <!-- <section class="section">
         <div class="paras">
         <p class="sectiontag text-big">The end of searching is here</p>
         <p class="sectionsubtag text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, numquam ipsa dicta
@@ -96,13 +97,26 @@
             
 
         </div>
-    </section>
+    </section> -->
     <footer>
         <p class="text-footer">
         Copyright &copy; 2024 PCWare - all rights reserved
         </p>
     </footer>
     <script src="./js/index.js"></script>
+    <button id="fetch-data">Get Server Data</button>
+  <p id="response"></p>
+
+  <script>
+    document.getElementById('fetch-data').addEventListener('click', () => {
+      fetch('https://your-app.onrender.com/api/data')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('response').innerText = data.message;
+        })
+        .catch(error => console.error('Error:', error));
+    });
+    </script>
 </body>
 
 </html>
