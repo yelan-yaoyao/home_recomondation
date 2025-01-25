@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..//css/house.css">
     <title>Houses</title>
 </head>
+
 <body>
     <div id="navbar"></div>
-   
+
     <main>
         <section class="filters">
             <div class="first">
-            <label for="price">Max Price:</label>
-            <input type="integer" id="price" placeholder="Enter maximum price">
+                <label for="price">Max Price:</label>
+                <input type="integer" id="price" placeholder="Enter maximum price" class="priceinput">
             </div>
             <div class="first">
-            <label for="state">State:</label>
-            <input type="text" id="state" placeholder="Enter state">
+                <label for="state">State:</label>
+                <select id="state" class="stateclass">
+                    <option value="">--Select State--</option>
+                    <option value="California">California</option>
+                    <option value="NewYork">New York</option>
+                    <option value="Florida">Florida</option>
+                </select>
             </div>
-            <div class="first">           
-            <label for="city">City:</label>
-            <input type="text" id="city" placeholder="Enter city">
+            <div class="first">
+                <label for="city">City:</label>
+                <select id="city" class="stateclass">
+                    <option value="">--Select city--</option>
+                    
+                </select>
             </div>
             <button id="filter-button">Search</button>
         </section>
@@ -30,5 +40,7 @@
         </section>
     </main>
     <script src="..//js/house.js"></script>
+    
 </body>
+
 </html>

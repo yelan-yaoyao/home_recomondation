@@ -5,15 +5,15 @@
         "description": "A beautiful 3-bedroom house.",
         "price": 250000,
         "state": "California",
-        "city": "Los Angeles"
+        "city": "LosAngeles"
     },
     {
         "id": 2,
         "image": "house2.jpg",
         "description": "Modern apartment in the city center.",
         "price": 300000,
-        "state": "New York",
-        "city": "New York"
+        "state": "NewYork",
+        "city": "NewYork"
     },
     {
         "id": 3,

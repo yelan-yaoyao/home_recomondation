@@ -75,3 +75,32 @@ function showHouseDetails(house) {
     document.body.appendChild(modal);
 }
 
+
+//the state and city stuff
+const stateCityMap = {
+    California: ["LosAngeles", "San Francisco", "San Diego"],
+    NewYork: ["Houston", "NewYork", "Austin"],
+    
+    Florida: ["Los Angeles", "San Francisco", "San Diego","Miami"]
+  };
+
+  const stateSelect = document.getElementById("state");
+  const citySelect = document.getElementById("city");
+
+  // Event listener for state selection
+  stateSelect.addEventListener("change", function () {
+    const selectedState = stateSelect.value;
+
+    // Clear existing city options
+    citySelect.innerHTML = '<option value="">--Select City--</option>';
+
+    // Populate cities based on selected state
+    if (selectedState && stateCityMap[selectedState]) {
+      stateCityMap[selectedState].forEach(city => {
+        const option = document.createElement("option");
+        option.value = city.toLowerCase().replace(/ /g, "-");
+        option.textContent = city;
+        citySelect.appendChild(option);
+      });
+    }
+  });
