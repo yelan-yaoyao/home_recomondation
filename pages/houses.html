@@ -8,21 +8,22 @@
 </head>
 <body>
     <div id="navbar"></div>
-    <header>
-        <h1>Explore Houses</h1>
-    </header>
+   
     <main>
         <section class="filters">
+            <div class="first">
             <label for="price">Max Price:</label>
-            <input type="number" id="price" placeholder="Enter maximum price">
-
+            <input type="integer" id="price" placeholder="Enter maximum price">
+            </div>
+            <div class="first">
             <label for="state">State:</label>
             <input type="text" id="state" placeholder="Enter state">
-
+            </div>
+            <div class="first">           
             <label for="city">City:</label>
             <input type="text" id="city" placeholder="Enter city">
-
-            <button id="filter-button">Filter</button>
+            </div>
+            <button id="filter-button">Search</button>
         </section>
         <section class="house-list" id="house-list">
             <!-- Houses will be dynamically populated here -->
