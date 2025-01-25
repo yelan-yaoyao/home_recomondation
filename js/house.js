@@ -36,7 +36,42 @@ document.getElementById("filter-button").addEventListener("click", () => {
                         <p><strong>Location:</strong> ${house.city}, ${house.state}</p>
                     </div>
                 `;
+                 // Add event listener for clicking a house item
+                 houseItem.addEventListener("click", () => {
+                    showHouseDetails(house);
+                });
+
                 houseList.appendChild(houseItem);
             });
         });
 });
+function showHouseDetails(house) {
+    // Create a modal container
+    const modal = document.createElement("div");
+    modal.className = "modal";
+
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-images">
+                <img src="${house.image}" alt="House Image">
+            </div>
+            <div class="modal-description">
+                <h2>${house.description}</h2>
+                <p><strong>Price:</strong> $${house.price}</p>
+                <p><strong>Location:</strong> ${house.city}, ${house.state}</p>
+                <p><strong>Additional Info:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod.</p>
+                <button id="order-now">Order Now</button>
+            </div>
+        </div>
+    `;
+
+    // Add close button functionality
+    modal.querySelector(".close-button").addEventListener("click", () => {
+        document.body.removeChild(modal);
+    });
+
+    // Append modal to the body
+    document.body.appendChild(modal);
+}
+
