@@ -6,14 +6,28 @@
 .main{
     height: 47.5vw;
     width: 100vw;
+    animation: animate 16s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(img1.jpeg);
+    }
+    25%{
+        background-image: url(img2.jpeg);
+    }
+    50%{
+        background-image: url(img3.jpeg);
+    }
+    75%{
+        background-image: url(img4.jpeg);
+    }
 }
 .top{
     padding-top: 1vw;
     height: 50%;
     width: 100%;
-    background-image: linear-gradient(pink, blue);
 }
-.top-navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +46,9 @@
 a{
     text-decoration: none;
     color: black;
+}
+.span{
+    background-color:rgba(0, 128, 0, 0);
 }
 .bottom{
     height: 50%;
