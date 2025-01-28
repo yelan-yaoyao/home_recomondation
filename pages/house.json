@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "image": "house1.jpg",
-        "description": "A beautiful 3-bedroom house.",
+        "image": "..//images/1.jpeg",
+        "description": "A beautiful 3-bedroom house with garden and a swiming pool peaceful environment . 24hrs water and electricity , less populated area",
         "price": 250000,
-        "state": "California",
-        "city": "LosAngeles"
+        "state": "Rajasthan",
+        "city": "Ajmer"
     },
     {
         "id": 2,
-        "image": "house2.jpg",
+        "image": "..//images/2.jpeg",
         "description": "Modern apartment in the city center.",
         "price": 300000,
-        "state": "NewYork",
-        "city": "NewYork"
+        "state": "Gujarat",
+        "city": "Surat"
     },
     {
         "id": 3,
-        "image": "house3.jpg",
+        "image": "..//images/3.jpeg",
         "description": "Spacious villa with a pool.",
         "price": 500000,
-        "state": "Florida",
-        "city": "Miami"
+        "state": "Punjab",
+        "city": "Amritsar"
     }
 ]

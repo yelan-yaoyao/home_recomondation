@@ -29,11 +29,13 @@ document.getElementById("filter-button").addEventListener("click", () => {
                 const houseItem = document.createElement("div");
                 houseItem.className = "house-item";
                 houseItem.innerHTML = `
-                    <img src="${house.image}" alt="House">
+                    <div class="housesection">
+                    <img src="${house.image}" alt="House" class = "imagehouse">
                     <div class="description">
-                        <p>${house.description}</p>
-                        <p><strong>Price:</strong> $${house.price}</p>
-                        <p><strong>Location:</strong> ${house.city}, ${house.state}</p>
+                        <p class = "housedesc">${house.description}</p>
+                        <p class = "housepric"><strong>Price:</strong> $${house.price}</p>
+                        <p class = "houselocate"><strong>Location:</strong> ${house.city}, ${house.state}</p>
+                    </div>
                     </div>
                 `;
                  // Add event listener for clicking a house item
@@ -74,14 +76,19 @@ function showHouseDetails(house) {
     // Append modal to the body
     document.body.appendChild(modal);
 }
-
-
 //the state and city stuff
 const stateCityMap = {
-    California: ["LosAngeles", "San Francisco", "San Diego"],
-    NewYork: ["Houston", "NewYork", "Austin"],
-    
-    Florida: ["Los Angeles", "San Francisco", "San Diego","Miami"]
+    Rajasthan: ["Ajmer", "Churu", "Jaipur","Bikaner","Dholpur","Bundi","Jhunjhunu","Kota","Pali","Pratapgarh"],
+    Gujarat: ["Ahmedabad", "Surat", "Dahod","Dang","Junagadh","Kheda","Patan","Rajkot","Tapi","Vyara"],
+    Punjab: ["Amritsar", "Barnala", "Faridkot","Firozpur","Ludhiana","Mansa"],
+    Newdelhi: ["ChandniChok", "NationalPark", "Sardarnagar","Sabarmati"], 
+    Haryana: ["Ambala", "Faridabad", "Hisar","Palwa","Rewari","Nuh"], 
+    Goa: ["Sattari", "Dharbandora", "Salcette"], 
+    Assam: ["Nagaon", "Baksa", "Dhubri","Darrang","Sonitpur"], 
+    Odisa: ["Angul", "Deogarh", "Jajpur","Kandhamal","Khordha"], 
+    Westbengal: ["Malda", "Birbhum", "Bankura"], 
+    Uttarpradesh: ["Agra", "Ayodhya", "Banda","Bijnor","Fetehpur","Gonda","Jhansi"],    
+    JandK: ["Jammu", "Kashmir", "Budgam","Kulgam"]
   };
 
   const stateSelect = document.getElementById("state");
@@ -104,3 +111,54 @@ const stateCityMap = {
       });
     }
   });
+
+
+
+// slider script 
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let thumbnails = document.querySelectorAll('.thumbnail .item');
+
+let countItem = items.length;
+let itemActive = 0;
+
+next.onclick = function () {
+    itemActive = itemActive+1;
+    if (itemActive >= countItem) {
+        itemActive= 0;
+    }
+    showSlider();
+}
+prev.onclick = function(){
+    itemActive = itemActive -1;
+    if (itemActive<0) {
+        itemActive = countItem-1;
+    }
+    showSlider();
+}
+let refreshInterval = setInterval(()=>{
+    next.click();
+},3000)
+function showSlider(){
+    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let thumbnaiActiveOld = document.querySelector('.thumbnail .item.active');
+    itemActiveOld.classList.remove('active');
+    thumbnaiActiveOld.classList.remove('active');
+
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=>{
+        next.click();
+    },5000)
+}
+
+thumbnails.forEach((thumbnail, index)=>{
+    thumbnail.addEventListener('click', ()=>{
+        itemActive= index;
+        showSlider();
+    })
+})
+
