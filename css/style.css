@@ -7,104 +7,34 @@
     height: 47.5vw;
     width: 100vw;
 }
-.navbar {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+.top{
+    padding-top: 1vw;
+    height: 50%;
     width: 100%;
+    background-image: linear-gradient(pink, blue);
+}
+.top-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 15%;
+    width: 100%;
 }
-.top-left button{
-    border-radius: 1vw;
-    padding: 2vw 4vw;
-    border: none;
-    background-color: #5F8DB7;
-    color: white;
-    cursor: pointer;
-}
-.nav-sub{
+.sub{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border-radius: 2vw;
     height: 100%;
-    width: 50%;
+    width: 45%;
+    background-image: linear-gradient(rgba(240, 248, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
-a {
-    font-size: 1.2vw;
-    color: #f5deb3;
-    font-weight: 600;
+a{
     text-decoration: none;
+    color: black;
 }
-.top {
+.bottom{
+    height: 50%;
     width: 100%;
-    height: 55%;
-    background-image: linear-gradient(500deg, #282828, #0F0F0F);
-}
-.top-sub{
-    display: flex;
-    height: 85%;
-    width: 100%;
-}
-.top-left{
-    padding: 2vw 4vw;
-    height: 100%;
-    width: 50%;
-}
-h1 {
-    color: white;
-    font-size: 5vw;
-    font-weight: 600;
-}
-h1 span{
-    color: #5F8DB7;
-}
-h5 {
-    margin: 2vw 0;
-    color: #dadada;
-}
-.top-right img{
-    height: 25vw;
-    width: 30vw;
-}
-.top-right{
-    padding: 0 8vw;
-    height: 100%;
-    width: 50%;
-}
-.bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: aliceblue;
-    width: 100%;
-    height: 45%;
-}
-.demo{
-    background-color: white;
-    height: 65%;
-    width: 30%;
-    border-radius: 1vw;
-}
-.demo-sub{
-    display: flex;
-    justify-content: center;
-    height: 80%;
-    width: 100%;
-}
-.demo-sub img{
-    border-radius: 1vw;
-    height: 95%;
-    width: 65%;
-}
-.demo-heading{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    width: 100%;
-}
-.demo-heading h3{
-    margin: 0vw 10vw;
-    font-size: 2vw;
-    color: #282828;
+    background-color: red;
 }
